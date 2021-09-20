@@ -1,0 +1,31 @@
+.team-section-wrapper{
+    background-image: url('../../images/teams/background-teams.png');
+    // background-size: cover;
+    padding: 2.5rem 2.625rem 0 2.625rem;
+}
+
+.team-section__title{
+    @include generalText;
+    color: $grey;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.team-section__text{
+    @include textMerri;
+    color: $grey;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+
+.card-img-wrapper{
+    width: 10.813rem;
+    height: 10.813rem;
+}
+
+.team-card__image{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+}

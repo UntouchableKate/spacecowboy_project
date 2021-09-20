@@ -1,0 +1,24 @@
+.hero {
+    padding:0 0 3.813rem 0.5rem;
+  }
+  
+  .hero__title {
+    margin: 0;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: $Mont;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .hero__title--large {
+    font-size: 1.875rem;
+    padding-bottom: 1.313rem;
+  }
+  
+  .hero__title--small{
+    position: relative;
+    letter-spacing: 1.2px;
+    font-size: 0.938rem;
+  }

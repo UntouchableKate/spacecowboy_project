@@ -1,0 +1,18 @@
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper__button {
+  border: none;
+  outline: none;
+  width: 11.25rem;
+  height: 2.5rem;
+  background-color: $yellow;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  color: #161b20;
+  font-weight: 700;
+  font-family: $Mont;
+  text-transform: uppercase;
+}

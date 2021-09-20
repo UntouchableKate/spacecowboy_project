@@ -1,0 +1,21 @@
+@mixin title24 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+@mixin generalText {
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+@mixin textMerri {
+    font-weight: 300;
+    font-family: "Merriweather";
+    text-align: center;
+}

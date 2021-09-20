@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../assets/Montserrat-Regular.ttf') format('truetype');
+
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../assets/Montserrat-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Merriweather Light'), local('Merriweather-Light'),
+         url('../assets/Merriweather-Light.ttf') format('truetype');
+  }
+
+  // @font-face {
+  //   font-family: 'Merriweather';
+  //   font-style: normal;
+  //   font-weight: 300;
+  //   src: local('Merriweather LightItalic'), local('Merriweather-LightItalic'),
+  //        url('../assets/Merriweather-LightItalic.ttf') format('truetype');
+  // }
+
