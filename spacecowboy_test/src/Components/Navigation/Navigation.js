@@ -3,11 +3,15 @@ import React, {Component} from "react";
 import logo from "../../logo.svg";
 import closeIcon from '../../images/close.png';
 
-// import background from '../../image/background.png';
 
 class  Navigation extends Component {
   state = {
     menuShown: false,
+    isScrolling: false,
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
   }
 
   handleToggleMenu = () => {
@@ -16,11 +20,21 @@ class  Navigation extends Component {
     })
   }
 
+  listenScrollEvent = e => {
+    if (window.scrollY > 50) {
+      this.setState({isScrolling: true})
+    } else {
+      this.setState({isScrolling: false})
+    }
+  }
+
+
+
   render() {
-    const {menuShown} = this.state;
+    const {menuShown ,isScrolling} = this.state;
     const {handleToggleMenu} = this;
   return (
-    <div className="navigation">
+    <div className={isScrolling ? 'navigation scrolling' : 'navigation'}>
       <div className="logo-wrapper">
         <img src={logo} className="logo-wrapper__img" alt="logo" /> 
       </div>

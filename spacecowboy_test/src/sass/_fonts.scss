@@ -23,11 +23,11 @@
          url('../assets/Merriweather-Light.ttf') format('truetype');
   }
 
-  // @font-face {
-  //   font-family: 'Merriweather';
-  //   font-style: normal;
-  //   font-weight: 300;
-  //   src: local('Merriweather LightItalic'), local('Merriweather-LightItalic'),
-  //        url('../assets/Merriweather-LightItalic.ttf') format('truetype');
-  // }
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Merriweather LightItalic'), local('Merriweather-LightItalic'),
+         url('../assets/Merriweather-LightItalic.ttf') format('truetype');
+  }
 

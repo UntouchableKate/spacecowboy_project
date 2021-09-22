@@ -1,10 +1,10 @@
 import React from "react";
 
 
-function Button() {
+function Button({buttonTitle}) {
   return (
     <div className="btn-wrapper">
-      <button type="button"className="btn-wrapper__button" >learn more</button>
+      <button type="submit" className="btn-wrapper__button" >{buttonTitle}</button>
     </div>
   );
 }

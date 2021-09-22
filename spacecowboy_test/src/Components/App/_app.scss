@@ -1,14 +1,13 @@
 .top-section-wrapper {
-  padding: 1.25rem 1.25rem 6.438rem 1.25rem;
-  // background-color: cadetblue;
   background: url("../../images/background-nav.png") no-repeat;
   // background: url('../../image/mobile.jpg') no-repeat;
   background-size: cover;
   background-position: 22%;
 }
 
-.top-section-darkLayer{
-  //to do
+.top-section-dark-cover{
+  padding-bottom: 6.438rem;
+  background-color: rgba(22, 27, 32, 0.7);
 }
 
 

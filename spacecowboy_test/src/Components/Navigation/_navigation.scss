@@ -1,9 +1,19 @@
 .navigation {
-  padding-bottom: 8.75rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: auto;
+  padding: 1.25rem 1.25rem 08.25rem 1.25rem;
+}
+
+.scrolling {
+  position: fixed;
+  top: 0;
+  background-color: rgba(22, 27, 32, 0.9);
+  z-index: 200;
+  min-width: 20.938rem;
+  padding-bottom: 1.25rem;
+  border-radius: 0 0 5px 5px;
 }
 
 .logo-wrapper {
@@ -34,11 +44,11 @@
   text-transform: uppercase;
 }
 
-.menu__icon--shownIcon{
+.menu__icon--shownIcon {
   padding-right: 0.563rem;
 }
 
-.menu__icon--hideIcon{
+.menu__icon--hideIcon {
   display: none;
 }
 
@@ -60,11 +70,15 @@
   justify-content: center;
 }
 
-.menu-list__item{
-font-size: 1.5rem;
-color: #fdfdff;
-font-weight: 700;
-font-family: $Mont;
-text-align: center;
-margin-bottom: 1.875rem;
+.menu-list__item {
+  font-size: 1.5rem;
+  color: #fdfdff;
+  font-weight: 700;
+  font-family: $Mont;
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.menu-list__item:hover {
+  color: $yellow;
 }
