@@ -124,7 +124,7 @@ class Team extends Component {
     const { backCardIsShown } = this.state;
     const {handleToggleCard} = this;
     return (
-      <div className="team-section-wrapper">
+      <div className="team-section-wrapper" id="theTeam">
         <div className="team-cover-wrapper">
           <div className="team-section-title-wrapper">
             <p className="team-section__title">The team</p>

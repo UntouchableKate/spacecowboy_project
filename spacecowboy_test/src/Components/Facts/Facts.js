@@ -8,7 +8,7 @@ import spaceIcon from '../../images/space-icon.png';
 
 function Facts() {
   return (
-    <div className="facts-section-wrapper">
+    <div className="facts-section-wrapper" id="aboutUs">
       <h4 className="facts-section__title">a few facts about us</h4>
       <p className="facts-section__text">
         Before you do business with us, you might want to know a little bit more

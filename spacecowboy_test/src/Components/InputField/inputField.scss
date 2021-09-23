@@ -1,0 +1,87 @@
+.inputField-wrapper {
+  position: relative;
+}
+
+.inputField__input {
+  width: 14.891rem;
+  height: 2.625rem;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 1.25rem;
+  color: #81c784;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 0.625rem 0 1.11rem;
+  outline: none;
+}
+
+.textarea {
+  padding: 1.188rem 2.375rem 0 1.125rem;
+  height: 9.8rem;
+  width: 13.25rem;
+}
+
+.inputField__input--error {
+  border: 2px solid #ef5350;
+  color: #ef5350;
+}
+
+.validation-icon {
+  width: 1.688rem;
+  height: 1.688rem;
+  position: absolute;
+  top: 35%;
+  right: 9px;
+}
+
+.inputField__input--error + .validation-icon {
+  background-image: url(../../images/form/invalid-icon.png);
+}
+
+.inputField__input--valid + .validation-icon {
+  background-image: url(../../images/form/valid-icon.png);
+  top: 15%;
+}
+
+.invalidFeedback {
+  font-size: 0.75rem;
+  color: #ef5350;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.438rem;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

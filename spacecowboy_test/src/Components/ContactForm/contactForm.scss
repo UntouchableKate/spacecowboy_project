@@ -1,0 +1,29 @@
+.helloForm-section-wrapper {
+  background-color: #acb1b6;
+  padding: 2.5rem 2.063rem 4.688rem 2.063rem;
+}
+
+.helloForm-section__title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: $black;
+  @include generalText;
+  letter-spacing: 1px;
+  margin-bottom: 1.875rem;
+  text-transform: uppercase;
+}
+
+.helloForm-section__text {
+  margin: 0;
+  font-size: 0.875rem;
+  color: $black;
+  line-height: 18px;
+  //  letter-spacing: 1px;
+  @include textMerri;
+  margin-bottom: 2.125rem;
+}
+
+.helloForm-form {
+  width: 16.875rem;
+  margin: 0 auto;
+}

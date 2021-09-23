@@ -16,7 +16,7 @@ import space12 from '../../images/gallery/space-12.jpg';
 
 function Gallery() {
   return (
-    <div className="gallery-section-wrapper">
+    <div className="gallery-section-wrapper" id="impressions">
      <h4 className="gallery-section__title">look at all <br/>  those stars!</h4>
      <p className="gallery-section__text">Some impressions from our trips to  frickin outer space, enjoy!</p>
 
