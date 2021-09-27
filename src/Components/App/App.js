@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Element, animateScroll as scroll, scroller } from "react-scroll";
-
+import { Element, scroller } from "react-scroll";
 //components
 import Navigation from "../Navigation";
 import Button from "../Button";
