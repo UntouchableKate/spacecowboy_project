@@ -1,0 +1,90 @@
+.team-section-wrapper {
+  background: url("../../images/teams/background-teams.png") no-repeat;
+  background-size: cover;
+}
+
+.team-cover-wrapper {
+  padding: 2.5rem 0 6.188rem 0;
+  background-color: rgba(22, 27, 32, 0.6);
+}
+
+.team-section-title-wrapper {
+  padding: 0 2.625rem;
+}
+
+.team-section__title {
+  margin: 0;
+  @include generalText;
+  color: $grey;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
+}
+
+.team-section__text {
+  margin: 0;
+  @include textMerri;
+  color: $grey;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  margin-bottom: 1.188rem;
+}
+
+//slider
+
+.slick-dots li {
+  margin: 0 !important;
+}
+
+.slick-active .active-div {
+  background-color: #acb1b6 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
+}
+
+.team__next-icon {
+  width: 7px;
+  height: 8px;
+}
+
+.slick-disabled {
+  display: none !important;
+}
+
+@media (min-width: 767px) {
+  .slick-list {
+    padding: 0 20px !important;
+  }
+}
+
+@media (min-width: 1170px) {
+  .team-cover-wrapper{
+    padding: 4.063rem 0 4.75rem 0;
+
+  }
+
+  .team-section__title{
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+  }
+
+  .team-section__text{
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    max-width: 40.313rem;
+    margin: 0 auto;
+    margin-bottom: 2.25rem;
+  }
+
+  .regular.slider{
+    max-width: 73.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+}

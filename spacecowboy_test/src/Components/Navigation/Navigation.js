@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { Link } from "react-scroll";
 
-import logo from "../../logo.svg";
+import logo from "../../images/logo.svg";
 import closeIcon from "../../images/close.png";
 
 class Navigation extends Component {
@@ -34,6 +34,7 @@ class Navigation extends Component {
     const { handleToggleMenu } = this;
     return (
       <div className={isScrolling ? "navigation scrolling" : "navigation"}>
+        <div className="nav-wrapper">
         <div className="logo-wrapper">
           <img src={logo} className="logo-wrapper__img" alt="logo" />
         </div>
@@ -48,8 +49,7 @@ class Navigation extends Component {
             />
             {menuShown ? "close" : "menu"}
           </button>
-          {menuShown && (
-            <ul className="menu-list">
+            <ul className={`menu-list ${menuShown && "menu-list--shown" }`}>
               <li className="menu-list__item">
                 <Link to="aboutUs" spy={true} smooth={true} offset={-70}>
                   ABOUT US
@@ -71,8 +71,8 @@ class Navigation extends Component {
                 </Link>
               </li>
             </ul>
-          )}
         </div>
+      </div>
       </div>
     );
   }

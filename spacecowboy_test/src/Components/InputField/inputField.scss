@@ -40,9 +40,19 @@
   background-image: url(../../images/form/invalid-icon.png);
 }
 
+.textarea.inputField__input--error + .validation-icon {
+  top: 43%;
+}
+
 .inputField__input--valid + .validation-icon {
   background-image: url(../../images/form/valid-icon.png);
   top: 15%;
+}
+.inputField-wrapper-textAreaField-wrapper
+  > div
+  > .inputField__input--valid
+  + .validation-icon {
+  top: 37%;
 }
 
 .invalidFeedback {
@@ -84,4 +94,34 @@ input:focus:-moz-placeholder {
 input:focus:-ms-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+@media (min-width: 1170px) {
+  .inputField__input {
+    width: 15rem;
+    height: 2.813rem;
+    padding: 0 0.625rem 0 1.125rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .helloForm-from-inputs > div:nth-child(3) > .inputField__input {
+    margin-bottom: 0;
+  }
+
+  .helloForm-from-inputs > div:nth-child(3) > .validation-icon {
+    top: 45%;
+  }
+
+  .helloForm-from-inputs
+    > div:nth-child(3)
+    > .inputField__input--valid
+    + .validation-icon {
+    top: 19%;
+  }
+
+  .textarea {
+    height: 8.875rem;
+    padding: 1.125rem 0.625rem 1.125rem 1.125rem;
+    margin-bottom: 0;
+  }
 }

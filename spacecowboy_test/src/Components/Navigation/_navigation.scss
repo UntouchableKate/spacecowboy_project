@@ -1,19 +1,24 @@
-.navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: auto;
-  padding: 1.25rem 1.25rem 08.25rem 1.25rem;
-}
-
 .scrolling {
   position: fixed;
   top: 0;
-  background-color: rgba(22, 27, 32, 0.9);
+  left: 0;
+  right: 0;
+  background-color: #43484E;
   z-index: 200;
-  min-width: 20.938rem;
-  padding-bottom: 1.25rem;
+  width: 100%;
   border-radius: 0 0 5px 5px;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.25rem 1.25rem 8.25rem 1.25rem;
+  height: auto;
+}
+
+.scrolling .nav-wrapper {
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
 }
 
 .logo-wrapper {
@@ -53,21 +58,30 @@
 }
 
 .menu-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
   height: 33.125rem;
   position: fixed;
-  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
   background-color: #000;
   opacity: 0.92;
   color: #fff;
-  display: flex;
   flex-direction: column;
   justify-content: center;
+  opacity: 0;
+  z-index: -100;
+  transition: all .5s ease;
+  transform: translate(0, -100%);
+}
+
+.menu-list--shown {
+  opacity: 1;
+  z-index: 100;
+  transform: translate(0, 0);
 }
 
 .menu-list__item {
@@ -77,8 +91,50 @@
   font-family: $Mont;
   text-align: center;
   margin-bottom: 1.875rem;
+  transition: all 0.3s ease;
 }
 
 .menu-list__item:hover {
   color: $yellow;
+  cursor: pointer;
+}
+
+@media (min-width: 767px) {
+  .logo-wrapper {
+    width: 2.188rem;
+    height: 2.188rem;
+  }
+
+  .scrolling {
+    width: 100%;
+  }
+
+  .menu__button {
+    display: none;
+  }
+
+  .menu-list {
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    height: auto;
+    flex-direction: row;
+    width: 31.25rem;
+    justify-content: space-evenly;
+    opacity: 1;
+    z-index: 1;
+    // transition: all .5s ease;
+    transform: translate(0, 0);
+  }
+
+  .menu-list__item {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1170px) {
+  .nav-wrapper {
+    padding: 2.438rem 0 11.375rem 1.25rem;
+  }
 }

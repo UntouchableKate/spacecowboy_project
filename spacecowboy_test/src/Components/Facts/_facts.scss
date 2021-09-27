@@ -1,0 +1,149 @@
+.facts-section-wrapper {
+  background-color: $grey;
+  padding: 2.375rem 1.25rem;
+}
+
+.facts-section__title {
+  margin: 0;
+  @include title24;
+  margin-bottom: 1.75rem;
+}
+
+.facts-section__text {
+  margin: 0;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  @include textMerri;
+  margin-bottom: 3.188rem;
+}
+
+.fact-section__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 1.375rem;
+}
+
+.fact-section__item {
+  max-width: 18.188rem;
+  height: 12.063rem;
+  border-radius: 3px;
+  background-color: #fdfdff;
+  color: $black;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+  margin-bottom: 3.188rem;
+  position: relative;
+  padding: 4.063rem 0 0 0;
+}
+
+.fact-section__item:last-child {
+  margin-bottom: 0;
+}
+
+.fact-section__circle {
+  width: 3.938rem;
+  height: 3.938rem;
+  background-color: $yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: -12%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-section__icon {
+  max-height: 2rem;
+  max-width: 1.688rem;
+}
+
+.fact-section__item-title {
+  margin: 0;
+  @include generalText;
+  text-transform: uppercase;
+  font-size: 1.188rem;
+  margin-bottom: 2.25rem;
+  color: $black;
+}
+
+.fact-section__item-text {
+  margin: 0;
+  @include textMerri;
+  font-size: 0.688rem;
+  line-height: 1.188rem;
+  padding: 0 2rem;
+  color: $black;
+}
+
+@media (min-width: 425px) {
+  .fact-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fact-section__item {
+    margin-right: 0.625rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .fact-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1170px) {
+  .facts-section-wrapper {
+    // max-width: 73.125rem;
+    padding: 4rem 0 7.625rem 0;
+    margin: 0 auto;
+  }
+
+  .facts-section__title {
+    font-size: 2.25rem;
+    margin-bottom: 2.125rem;
+  }
+
+  .facts-section__text{
+    max-width: 39.375rem;
+    font-size: 1.125rem;
+    margin: 0 auto;
+    margin-bottom: 5.563rem;
+  }
+
+  .fact-section__list{
+    max-width: 73.125rem;
+    margin: 0 auto;
+  }
+
+  .fact-section__item{
+    margin: 0;
+    max-width: 23.125rem;
+    height: 15.625rem;
+    padding: 5rem 0 0 0;
+  }
+
+  .fact-section__circle{
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .fact-section__icon{
+    max-width: 3.188rem;
+    max-height: 2.563rem;
+  }
+
+  .fact-section__item-title{
+    font-size: 1.5rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .fact-section__item-text{
+    font-size: 0.875rem;
+    padding: 0 2.5rem;
+    letter-spacing: 1px;
+  }
+}

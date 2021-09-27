@@ -1,34 +1,44 @@
 import React from "react";
 
-import {animateScroll as scroll} from 'react-scroll'
+import { Element, animateScroll as scroll, scroller } from "react-scroll";
 
 //components
 import Navigation from "../Navigation";
 import Button from "../Button";
 import Hero from "../Hero";
 import Facts from "../Facts";
-import Team from "../Team";
+import TeamIList from "../TeamList";
 import Gallery from "../Gallery";
-import ContactForm from '../ContactForm';
+import ContactForm from "../ContactForm";
+import Footer from "../Footer";
 
 function App() {
-
- const scrollTo =() => {
-    scroll.scrollTo(272);
-  }
+  const scrollTo = () => {
+    scroller.scrollTo("scrollToElement", {
+      duration: 1000,
+      delay: 0,
+      smooth: "easeInOutQuart",
+      offset: -260,
+    });
+  };
   return (
     <div>
       <div className="top-section-wrapper">
         <div className="top-section-dark-cover">
-          <Navigation />
-          <Hero />
-          <Button buttonTitle='learn more' scrollTo={scrollTo} />
+          <div className="header-wrapper">
+            <Navigation />
+            <Hero />
+            <Button buttonTitle="learn more" scrollTo={scrollTo} />
+          </div>
         </div>
       </div>
-      <Facts />
-      <Team />
+      <Element name="scrollToElement">
+        <Facts />
+      </Element>
+      <TeamIList />
       <Gallery />
       <ContactForm />
+      <Footer />
     </div>
   );
 }

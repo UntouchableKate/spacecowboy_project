@@ -1,6 +1,5 @@
 .top-section-wrapper {
   background: url("../../images/background-nav.png") no-repeat;
-  // background: url('../../image/mobile.jpg') no-repeat;
   background-size: cover;
   background-position: 22%;
 }
@@ -10,4 +9,17 @@
   background-color: rgba(22, 27, 32, 0.7);
 }
 
+
+@media (min-width: 767px) {
+  .header-wrapper{
+    max-width: 73.125rem;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 1170px){
+  .top-section-dark-cover{
+    padding-bottom: 9.25rem;
+  }
+}
 

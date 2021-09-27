@@ -1,0 +1,80 @@
+.helloForm-section-wrapper {
+  background-color: #acb1b6;
+  padding: 2.5rem 2.063rem 4.688rem 2.063rem;
+}
+
+.helloForm-section__title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: $black;
+  @include generalText;
+  letter-spacing: 1px;
+  margin-bottom: 1.875rem;
+  text-transform: uppercase;
+}
+
+.helloForm-section-text-wrapper{
+  margin-bottom: 2.125rem;
+}
+
+.helloForm-section__text {
+  font-size: 0.875rem;
+  color: $black;
+  line-height: 18px;
+  @include textMerri;
+  margin: 0 auto;
+}
+
+.helloForm-section__text--first{
+  max-width: 16rem;
+}
+
+.helloForm-form {
+  max-width: 16.875rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1170px) {
+  .helloForm-section-wrapper {
+    padding: 0;
+  }
+
+  .contactForm-wrapper {
+    max-width: 48.125rem;
+    margin: 0 auto;
+    padding: 4.25rem 0 9.063rem 0;
+  }
+
+  .helloForm-section__title{
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+    margin-bottom: 2.125rem;
+  }
+
+  .helloForm-section-text-wrapper{
+    margin-bottom: 4.25rem;
+  } 
+
+  .helloForm-section__text--first{
+    max-width: 100%;
+  }
+
+  .helloForm-section__text{
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    line-height: 24px;
+
+  }
+
+  .helloForm-form{
+    max-width: 35.625rem;
+  }
+
+  .helloForm-form-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5.5rem;
+  }
+
+
+}

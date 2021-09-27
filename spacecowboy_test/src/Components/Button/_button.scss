@@ -15,4 +15,21 @@
   font-weight: 700;
   font-family: $Mont;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (min-width: 767px) {
+  .btn-wrapper__button{
+    width: 16rem;
+    height: 3rem;
+  }
+}
+
+@media (min-width: 1170px) {
+  .btn-wrapper__button{
+    width: 16.875rem;
+    height: 3.75rem;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+  }
 }

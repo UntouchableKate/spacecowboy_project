@@ -1,0 +1,53 @@
+.footer-background {
+  background-color: $black;
+}
+
+.footer-wrapper {
+  max-width: 12rem;
+  margin: 0 auto;
+  padding: 2.125rem 0 1.875rem 0;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #484d52;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer-company{
+    display: flex;
+    width: 10.938rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-company__name{
+    margin: 0;
+    font-size: 0.875rem;
+    color: #484d52;
+    @include generalText;
+    text-transform: uppercase;
+}
+
+.footer-company__logo{
+    width: 2.188rem;
+    height: 2.188rem;
+}
+
+@media (min-width: 1170px) {
+    .footer-wrapper {
+        max-width: 10.625rem;
+        margin: 0 auto;
+        padding: 2.188rem 0 1.875rem 0;
+      }
+
+      .footer__copyright {
+        font-size: 0.875rem;
+        margin-bottom: 0.938rem;
+      }
+}

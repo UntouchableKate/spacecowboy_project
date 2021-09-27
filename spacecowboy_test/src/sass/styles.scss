@@ -1,31 +1,29 @@
-
-@import './normalize';
-@import './variables';
-@import './fonts';
-@import './mixins';
-@import '../Components/App/app';
-@import '../Components/Navigation/navigation';
-@import '../Components/Hero/hero.scss';
-@import '../Components/Button/button';
-@import '../Components/Facts/facts.scss';
-@import '../Components/Team/team.scss';
-@import '../Components/Gallery/gallery.scss';
-@import '../Components/ContactForm/ContactForm.scss';
-@import '../Components/InputField/inputField.scss';
-
-
-
+@import "./normalize";
+@import "./variables";
+@import "./fonts";
+@import "./mixins";
+@import "../Components/App/app";
+@import "../Components/Navigation/navigation";
+@import "../Components/Hero/hero";
+@import "../Components/Button/button";
+@import "../Components/Facts/facts";
+@import "../Components/TeamList/teamList";
+@import "../Components/TeamItem/teamItem";
+@import "../Components/Gallery/gallery";
+@import "../Components/ContactForm/ContactForm";
+@import "../Components/InputField/inputField";
+@import "../Components/Footer/footer";
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
